@@ -15,7 +15,7 @@ public class MarkdownParse {
 		if (!(markdown.contains("[") && markdown.contains("]"))) {
                 	return toReturn;
             }
-            if (!(markdown.contains("(") && markdown.contains(")"))) {
+		if (!(markdown.contains("(") && markdown.contains(")"))) {
                 	return toReturn;
             }
             int openBracket = markdown.indexOf("[", currentIndex);
