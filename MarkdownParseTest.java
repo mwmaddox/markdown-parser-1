@@ -8,6 +8,12 @@ public class MarkdownParseTest {
     }
 
     @Test
+    public void test-file(){
+        assertEquals(getLinks(test-file.md), {"https://something.com", "some-page.html"}); 
+    }
+
+
+    @Test
     public void testLinkAtBeginning() {
         String contents= "[link title](a.com)";
         List<String> expect = List.of("a.com");
@@ -32,3 +38,4 @@ public class MarkdownParseTest {
     }
 
 }
+
